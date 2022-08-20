@@ -14,21 +14,13 @@ class DetailedViewController: UIViewController {
     @IBOutlet var email: UILabel!
     @IBOutlet var phone: UILabel!
     
+    var person = Person()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        imageView.image = person.image
+        personName.text = person.name! + " " + person.surname!
+        email.text = person.email
+        phone.text = person.phone
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

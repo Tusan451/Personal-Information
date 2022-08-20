@@ -23,6 +23,7 @@ class PersonsViewController: UITableViewController {
         cell.textLabel?.text = persons[indexPath.row].name! + " " + persons[indexPath.row].surname!
         
         cell.imageView?.image = persons[indexPath.row].image
+        cell.imageView?.clipsToBounds = true
 
         return cell
     }

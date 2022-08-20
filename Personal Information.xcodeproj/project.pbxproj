@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		E0460CA128B0E178006ABE22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0460CA028B0E178006ABE22 /* AppDelegate.swift */; };
 		E0460CA328B0E178006ABE22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0460CA228B0E178006ABE22 /* SceneDelegate.swift */; };
-		E0460CA528B0E178006ABE22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0460CA428B0E178006ABE22 /* ViewController.swift */; };
 		E0460CA828B0E178006ABE22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0460CA628B0E178006ABE22 /* Main.storyboard */; };
 		E0460CAA28B0E179006ABE22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0460CA928B0E179006ABE22 /* Assets.xcassets */; };
 		E0460CAD28B0E179006ABE22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0460CAB28B0E179006ABE22 /* LaunchScreen.storyboard */; };
+		E0460CB528B0EBAC006ABE22 /* PersonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0460CB428B0EBAC006ABE22 /* PersonsViewController.swift */; };
+		E0460CB728B0EBFE006ABE22 /* MoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0460CB628B0EBFE006ABE22 /* MoreInformationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E0460C9D28B0E178006ABE22 /* Personal Information.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Information.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0460CA028B0E178006ABE22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0460CA228B0E178006ABE22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E0460CA428B0E178006ABE22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E0460CA728B0E178006ABE22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0460CA928B0E179006ABE22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0460CAC28B0E179006ABE22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0460CAE28B0E179006ABE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0460CB428B0EBAC006ABE22 /* PersonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsViewController.swift; sourceTree = "<group>"; };
+		E0460CB628B0EBFE006ABE22 /* MoreInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				E0460CA028B0E178006ABE22 /* AppDelegate.swift */,
 				E0460CA228B0E178006ABE22 /* SceneDelegate.swift */,
-				E0460CA428B0E178006ABE22 /* ViewController.swift */,
+				E0460CB428B0EBAC006ABE22 /* PersonsViewController.swift */,
+				E0460CB628B0EBFE006ABE22 /* MoreInformationViewController.swift */,
 				E0460CA628B0E178006ABE22 /* Main.storyboard */,
 				E0460CA928B0E179006ABE22 /* Assets.xcassets */,
 				E0460CAB28B0E179006ABE22 /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0460CA528B0E178006ABE22 /* ViewController.swift in Sources */,
+				E0460CB528B0EBAC006ABE22 /* PersonsViewController.swift in Sources */,
 				E0460CA128B0E178006ABE22 /* AppDelegate.swift in Sources */,
+				E0460CB728B0EBFE006ABE22 /* MoreInformationViewController.swift in Sources */,
 				E0460CA328B0E178006ABE22 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

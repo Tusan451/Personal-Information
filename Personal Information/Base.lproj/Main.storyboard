@@ -104,6 +104,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Person Information" id="Sq8-i5-2SI"/>
+                    <connections>
+                        <outlet property="email" destination="zQ8-kl-uIa" id="fWX-6D-ggd"/>
+                        <outlet property="imageView" destination="hYh-4U-2V7" id="GLG-4o-EFY"/>
+                        <outlet property="personName" destination="0Gu-DG-mzB" id="lSs-DX-sqE"/>
+                        <outlet property="phone" destination="vjG-XE-YjT" id="ZTD-T5-B83"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EHE-Q7-ogz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

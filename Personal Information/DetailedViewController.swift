@@ -9,6 +9,11 @@ import UIKit
 
 class DetailedViewController: UIViewController {
 
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var personName: UILabel!
+    @IBOutlet var email: UILabel!
+    @IBOutlet var phone: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

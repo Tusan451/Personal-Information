@@ -14,6 +14,7 @@
 		E0460CAD28B0E179006ABE22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0460CAB28B0E179006ABE22 /* LaunchScreen.storyboard */; };
 		E0460CB528B0EBAC006ABE22 /* PersonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0460CB428B0EBAC006ABE22 /* PersonsViewController.swift */; };
 		E0460CB728B0EBFE006ABE22 /* MoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0460CB628B0EBFE006ABE22 /* MoreInformationViewController.swift */; };
+		E0460CB928B104EA006ABE22 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0460CB828B104EA006ABE22 /* DetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E0460CAE28B0E179006ABE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0460CB428B0EBAC006ABE22 /* PersonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsViewController.swift; sourceTree = "<group>"; };
 		E0460CB628B0EBFE006ABE22 /* MoreInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationViewController.swift; sourceTree = "<group>"; };
+		E0460CB828B104EA006ABE22 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				E0460CA228B0E178006ABE22 /* SceneDelegate.swift */,
 				E0460CB428B0EBAC006ABE22 /* PersonsViewController.swift */,
 				E0460CB628B0EBFE006ABE22 /* MoreInformationViewController.swift */,
+				E0460CB828B104EA006ABE22 /* DetailedViewController.swift */,
 				E0460CA628B0E178006ABE22 /* Main.storyboard */,
 				E0460CA928B0E179006ABE22 /* Assets.xcassets */,
 				E0460CAB28B0E179006ABE22 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				E0460CB528B0EBAC006ABE22 /* PersonsViewController.swift in Sources */,
 				E0460CA128B0E178006ABE22 /* AppDelegate.swift in Sources */,
+				E0460CB928B104EA006ABE22 /* DetailedViewController.swift in Sources */,
 				E0460CB728B0EBFE006ABE22 /* MoreInformationViewController.swift in Sources */,
 				E0460CA328B0E178006ABE22 /* SceneDelegate.swift in Sources */,
 			);

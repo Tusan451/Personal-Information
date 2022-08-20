@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,13 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="GyV-qV-gTH">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PersonName" id="GyV-qV-gTH">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GyV-qV-gTH" id="Hfh-U9-Knu">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="2uf-xJ-XrT" kind="show" id="AiS-an-AYT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -35,6 +39,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2KC-pT-scT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1218.840579710145" y="59.598214285714285"/>
+        </scene>
+        <!--Person Information-->
+        <scene sceneID="4oT-y1-pf7">
+            <objects>
+                <viewController id="2uf-xJ-XrT" customClass="DetailedViewController" customModule="Personal_Information" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XMi-3A-9BX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hYh-4U-2V7">
+                                <rect key="frame" x="107" y="118" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Jol-1C-4Zs"/>
+                                    <constraint firstAttribute="width" constant="200" id="MeL-gL-CV7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gu-DG-mzB">
+                                <rect key="frame" x="133.5" y="342" width="147" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgA-CK-XY9">
+                                <rect key="frame" x="24" y="403" width="45" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQ8-kl-uIa">
+                                <rect key="frame" x="345" y="403" width="45" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWM-Fb-gkp">
+                                <rect key="frame" x="24" y="448" width="119" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjG-XE-YjT">
+                                <rect key="frame" x="271" y="448" width="119" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O6L-hc-d5l"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O6L-hc-d5l" firstAttribute="trailing" secondItem="vjG-XE-YjT" secondAttribute="trailing" constant="24" id="87i-lF-FC6"/>
+                            <constraint firstItem="0Gu-DG-mzB" firstAttribute="centerX" secondItem="XMi-3A-9BX" secondAttribute="centerX" id="BR1-xA-fVr"/>
+                            <constraint firstItem="hYh-4U-2V7" firstAttribute="top" secondItem="O6L-hc-d5l" secondAttribute="top" constant="30" id="J3B-fG-Xe3"/>
+                            <constraint firstItem="O6L-hc-d5l" firstAttribute="trailing" secondItem="zQ8-kl-uIa" secondAttribute="trailing" constant="24" id="MOb-V6-GEJ"/>
+                            <constraint firstItem="zQ8-kl-uIa" firstAttribute="top" secondItem="0Gu-DG-mzB" secondAttribute="bottom" constant="32" id="SDS-y9-bfq"/>
+                            <constraint firstItem="vjG-XE-YjT" firstAttribute="top" secondItem="zQ8-kl-uIa" secondAttribute="bottom" constant="24" id="SpO-F3-ea8"/>
+                            <constraint firstItem="hYh-4U-2V7" firstAttribute="centerX" secondItem="XMi-3A-9BX" secondAttribute="centerX" id="Xx3-dx-4if"/>
+                            <constraint firstItem="RWM-Fb-gkp" firstAttribute="leading" secondItem="O6L-hc-d5l" secondAttribute="leading" constant="24" id="ZYg-Ml-Fzi"/>
+                            <constraint firstItem="xgA-CK-XY9" firstAttribute="leading" secondItem="O6L-hc-d5l" secondAttribute="leading" constant="24" id="cWg-MY-XtU"/>
+                            <constraint firstItem="0Gu-DG-mzB" firstAttribute="top" secondItem="hYh-4U-2V7" secondAttribute="bottom" constant="24" id="eHa-SS-AQM"/>
+                            <constraint firstItem="xgA-CK-XY9" firstAttribute="top" secondItem="0Gu-DG-mzB" secondAttribute="bottom" constant="32" id="qIb-i2-M6n"/>
+                            <constraint firstItem="RWM-Fb-gkp" firstAttribute="top" secondItem="xgA-CK-XY9" secondAttribute="bottom" constant="24" id="xEu-ta-YM3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Person Information" id="Sq8-i5-2SI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EHE-Q7-ogz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2013.5999999999999" y="59.820089955022496"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X8g-gK-LGH">
@@ -62,7 +135,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell2" id="Ah3-Vv-iCa">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PersonInformation" id="Ah3-Vv-iCa">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ah3-Vv-iCa" id="Bya-rO-eft">
@@ -122,6 +195,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
